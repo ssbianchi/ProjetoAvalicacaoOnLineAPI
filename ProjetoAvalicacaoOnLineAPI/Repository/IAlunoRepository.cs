@@ -10,6 +10,7 @@ namespace ProjetoAvalicacaoOnLineAPI.Repository
     {
         public IEnumerable<Aluno> ListAll();
 
-        public int Insert(Aluno Aluno);
+        //public int Insert(string nome, string cpf, DateTime dataNascimento, int step);
+        public int Insert(Aluno aluno);
     }
 }

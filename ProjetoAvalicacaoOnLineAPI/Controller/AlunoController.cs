@@ -40,10 +40,12 @@ namespace ProjetoAvalicacaoOnLineAPI.Controller
         }
 
         [HttpPost]
+        //public IActionResult SetData([FromBody] string nome, string cpf, DateTime dataNascimento, int step)
         public IActionResult SetData([FromBody] Aluno aluno)
         {
             try
             {
+                //var result = _alunoRepository.Insert(nome, cpf, dataNascimento, step);
                 var result = _alunoRepository.Insert(aluno);
 
                 return Ok();
