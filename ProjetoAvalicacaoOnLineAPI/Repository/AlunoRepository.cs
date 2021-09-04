@@ -41,7 +41,7 @@ namespace ProjetoAvalicacaoOnLineAPI.Repository
 
             var alunoData = connection.Query<Aluno>("Select * From Aluno");
 
-            return alunoData;
+            return null;
         }
     }
 }
