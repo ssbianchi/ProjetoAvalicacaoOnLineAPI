@@ -13,6 +13,10 @@ namespace ProjetoAvalicacaoOnLineAPI.Repository
     {
         private readonly string _connectionString;
 
+        public AlunoRepository()
+        {
+            _connectionString = "Server=tcp:avaliacao-online-server.database.windows.net,1433;Initial Catalog=AvalicaoOnlineDB;Persist Security Info=False;User ID=sergio;Password=!@123QWqwe;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        }
         public AlunoRepository(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("AlunoDataServer");
